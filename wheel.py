@@ -10,6 +10,16 @@ class SpinningWheelApp:
     def __init__(self, root):
         self.root = root
         self.root.title("Spinning Wheel")
+
+        # Center the main window on screen
+        window_width = 420
+        window_height = 500
+        screen_width = self.root.winfo_screenwidth()
+        screen_height = self.root.winfo_screenheight()
+        x = (screen_width // 2) - (window_width // 2)
+        y = (screen_height // 2) - (window_height // 2)
+        self.root.geometry(f"{window_width}x{window_height}+{x}+{y}")
+
         self.canvas_size = 400
         self.center = self.canvas_size // 2
         self.num_sectors = 16
@@ -93,7 +103,14 @@ class SpinningWheelApp:
     def show_result(self, label):
         popup = Toplevel(self.root)
         popup.title("Your Question")
-        popup.geometry("250x100")
+
+        popup_width = 250
+        popup_height = 100
+        screen_width = popup.winfo_screenwidth()
+        screen_height = popup.winfo_screenheight()
+        x = (screen_width // 2) - (popup_width // 2)
+        y = (screen_height // 2) - (popup_height // 2)
+        popup.geometry(f"{popup_width}x{popup_height}+{x}+{y}")
         popup.resizable(False, False)
 
         msg = tk.Label(popup, text=f"Please answer {label}!", font=("Arial", 14))
@@ -107,4 +124,3 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = SpinningWheelApp(root)
     root.mainloop()
-
