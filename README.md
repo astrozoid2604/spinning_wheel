@@ -2,7 +2,9 @@
 
 This Python project is a simple GUI-based **Spinning Wheel** game with 16 labeled sectors (`Q1` to `Q16`). Click the "Spin Me!" button to spin the wheel, and a pop-up will prompt you to answer the question pointed by the arrow.
 
-![Spinning Wheel Preview](thumbnail.png)
+<p align="center">
+  <img src="thumbnail.png" alt="Spinning Wheel Preview" width="400"/>
+</p>
 
 ---
 
