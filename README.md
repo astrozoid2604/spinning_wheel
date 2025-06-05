@@ -6,6 +6,14 @@ This Python project is a simple GUI-based **Spinning Wheel** game with 16 labele
   <img src="thumbnail.png" alt="Spinning Wheel Preview" width="400"/>
 </p>
 
+<h2 align="center">🎥 Demo Video</h2>
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=L9rrCugr63A">
+    <img src="https://img.youtube.com/vi/L9rrCugr63A/hqdefault.jpg" alt="Watch the demo" width="480">
+  </a>
+</p>
+
+
 ---
 
 ## 🧰 Features
