@@ -35,14 +35,14 @@ This Python project is a simple GUI-based **Spinning Wheel** game with 16 labele
 
 ### 1. Clone or Download the Repository
 ```bash
-git clone https://github.com/yourusername/spinning-wheel-app.git
-cd spinning-wheel-app
+git clone git@github.com:astrozoid2604/spinning_wheel.git
+cd spinning_wheel
 ```
 
 ### 2. Create Conda Environment
-Save this file as `spinning_wheel_env.yml`:
+Save this file as `wheel.yaml`:
 ```yaml
-name: spinning_wheel
+name: wheel
 channels:
   - defaults
   - conda-forge
@@ -54,12 +54,12 @@ dependencies:
 
 Then create the environment:
 ```bash
-conda env create -f spinning_wheel_env.yml
+conda env create -f wheel.yaml
 ```
 
 ### 3. Activate Environment
 ```bash
-conda activate spinning_wheel
+conda activate wheel
 ```
 
 ---
@@ -68,7 +68,7 @@ conda activate spinning_wheel
 
 Once the environment is active, run the script:
 ```bash
-python spinning_wheel.py
+python wheel.py
 ```
 
 ---

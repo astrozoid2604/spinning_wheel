@@ -1,4 +1,4 @@
-name: spinning_wheel
+name: wheel
 channels:
   - defaults
   - conda-forge
