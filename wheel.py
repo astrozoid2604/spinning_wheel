@@ -179,19 +179,41 @@ class SpinningWheelApp:
         threading.Thread(target=self.spin_wheel).start()
 
     def spin_wheel(self):
-        total_duration = 2
-        steps = 100
-        sleep_interval = total_duration / steps
-        final_angle = random.uniform(3 * 360, 6 * 360)
-        angle = 0
+        ## For MacOS Laptop
+        #total_duration = 2
+        #steps = 100
+        #sleep_interval = total_duration / steps
+        #final_angle = random.uniform(3 * 360, 6 * 360)
+        #angle = 0
 
-        for i in range(steps):
-            ease_out = 1 - (i / steps)
-            delta = (final_angle / steps) * ease_out
-            angle += delta
-            self.current_angle = angle % 360
+        #for i in range(steps):
+        #    ease_out = 1 - (i / steps)
+        #    delta = (final_angle / steps) * ease_out
+        #    angle += delta
+        #    self.current_angle = angle % 360
+        #    self.draw_wheel(self.current_angle)
+        #    time.sleep(sleep_interval)
+
+        ## For WindowsOS Laptop
+        total_duration = 4 # seconds
+        fps = 60
+        max_frames = total_duration * fps
+        start_time = time.time()
+        angle = 0
+        final_angle = random.uniform(3 * 360, 6 * 360)
+
+        while True:
+            elapsed = time.time() - start_time
+            t = min(elapsed / total_duration, 1) # normalized 0 to 1
+            ease_out = 1 - (t**2) # quadratic ease out
+            current_delta = final_angle * ease_out
+            self.current_angle = current_delta % 360
             self.draw_wheel(self.current_angle)
-            time.sleep(sleep_interval)
+
+            if t >= 1:
+                break
+
+            time.sleep(1 / fps)
 
         # Ensure the result is not in the last 5 spins
         adjusted_angle = (self.current_angle + 90) % 360
