@@ -195,7 +195,7 @@ class SpinningWheelApp:
         #    time.sleep(sleep_interval)
 
         ## For WindowsOS Laptop
-        total_duration = 4 # seconds
+        total_duration = 2 # seconds
         fps = 60
         max_frames = total_duration * fps
         start_time = time.time()
