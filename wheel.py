@@ -266,7 +266,7 @@ class SpinningWheelApp:
             popup.destroy()
             self.check_popups_closed()
 
-        close_btn = tk.Button(scrollable_frame, text="✖", command=close_popup, font=("Arial", 20))
+        close_btn = tk.Button(scrollable_frame, text="x", command=close_popup, font=("Arial", 20))
         close_btn.pack(anchor="ne")
 
         # Bind mouse wheel for scrolling
@@ -323,7 +323,7 @@ class SpinningWheelApp:
             answer_popup.destroy()
             self.check_popups_closed()
 
-        close_btn = tk.Button(scrollable_frame, text="✖", command=close_popup, font=("Arial", 20))
+        close_btn = tk.Button(scrollable_frame, text="x", command=close_popup, font=("Arial", 20))
         close_btn.pack(anchor="ne")
 
         # Bind mouse wheel for scrolling
