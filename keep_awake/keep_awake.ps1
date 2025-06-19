@@ -30,4 +30,4 @@ while ((Get-Date) -lt $endTime) {
 Write-Host "`nKeepAwake session completed at $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')."
 
 
-# powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\keep_awake.ps1 -Hours 4
+# powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Desktop\spinning_wheel\keep_awake\keep_awake.ps1 -Hours 24
