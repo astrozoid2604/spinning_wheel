@@ -55,16 +55,16 @@ qna_dict = {
            f"\n    B) It can learn from data and improve over time\n"
            f"\n    C) It always requires a robot body\n"
            f"\n    D) It’s used only in video games"],
-    "Q9": ["B) To observe processes directly at the place where value is created",
-           f"\nQ9. What is the main purpose of a Gemba walk?\n"
-           f"\n    A) To get your daily steps in\n"
-           f"\n    B) To observe processes directly at the place where value is created\n"
-           f"\n    C) To find the best coffee machine in the office\n"
-           f"\n    D) To practice walking on the manufacturing floor"],
-    "Q10": ["B) Lean Six Sigma principles and best practices",
+    "Q9": ["B) To boost business performance using Operational Excellence tools, AI, and advanced technology",
+           f"\nQ9. What is the main goal of Continuous Improvement 2.0 (CI2.0)?\n"
+           f"\n    A) To boost business performance using Operational Excellence tools, AI, and advanced technology\n"
+           f"\n    B) To replace all human major decision-making with AI\n"
+           f"\n    C) To maintain existing processes without changes\n"
+           f"\n    D) To reduce headcount through automation"],
+    "Q10": ["B) Lean, Six Sigma principle and Agile best practices",
             f"\nQ10. What does the AI4CI assistant help team members learn about?\n"
             f"\n     A) Personal time management techniques\n"
-            f"\n     B) Lean Six Sigma principles and best practices\n"
+            f"\n     B) Lean, Six Sigma principles and Agile best practices\n"
             f"\n     C) Finance and accounting processes\n"
             f"\n     D) Corporate compliance policies"],
     "Q11": ["C) A Non-GxP Proof of Concept",
