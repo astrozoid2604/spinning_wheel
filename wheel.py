@@ -71,7 +71,7 @@ qna_dict = {
             f"\nQ12. AI4CI is currently classified as:\n"
             f"\n     A) A full production system\n"
             f"\n     B) A training tool\n"
-            f"\n     C) A Non-GxP\n"
+            f"\n     C) A Non-GxP tool\n"
             f"\n     D) A tool for audits"],
     "Q12": ["B) Root cause analysis",
             f"\nQ12. The 5 Whys technique is primarily used for:\n"
