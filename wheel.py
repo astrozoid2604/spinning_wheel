@@ -51,10 +51,10 @@ qna_dict = {
            f"\n    D) It can replace all pharmacists."],
     "Q8": ["B) It can learn from data and improve over time",
            f"\nQ8. What makes AI different from traditional software?\n"
-           f"\n    A) It doesn't need electricity\n"
+           f"\n    A) It does not need electricity\n"
            f"\n    B) It can learn from data and improve over time\n"
            f"\n    C) It always requires a robot body\n"
-           f"\n    D) It’s used only in video games"],
+           f"\n    D) It is used only in video games"],
     "Q9": ["B) To boost business performance using Operational Excellence tools, AI, and advanced technology",
            f"\nQ9. What is the main goal of Continuous Improvement 2.0 (CI2.0)?\n"
            f"\n    A) To boost business performance using Operational Excellence tools, AI, and advanced technology\n"
@@ -67,7 +67,7 @@ qna_dict = {
             f"\n     B) Lean, Six Sigma principles and Agile best practices\n"
             f"\n     C) Finance and accounting processes\n"
             f"\n     D) Corporate compliance policies"],
-    "Q11": ["C) A Non-GxP",
+    "Q11": ["C) A Non-GxP tool",
             f"\nQ12. AI4CI is currently classified as:\n"
             f"\n     A) A full production system\n"
             f"\n     B) A training tool\n"
