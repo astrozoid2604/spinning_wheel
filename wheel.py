@@ -67,11 +67,11 @@ qna_dict = {
             f"\n     B) Lean, Six Sigma principles and Agile best practices\n"
             f"\n     C) Finance and accounting processes\n"
             f"\n     D) Corporate compliance policies"],
-    "Q11": ["C) A Non-GxP Proof of Concept",
+    "Q11": ["C) A Non-GxP",
             f"\nQ12. AI4CI is currently classified as:\n"
             f"\n     A) A full production system\n"
-            f"\n     B) A GxP-validated tool\n"
-            f"\n     C) A Non-GxP Proof of Concept\n"
+            f"\n     B) A training tool\n"
+            f"\n     C) A Non-GxP\n"
             f"\n     D) A tool for audits"],
     "Q12": ["B) Root cause analysis",
             f"\nQ12. The 5 Whys technique is primarily used for:\n"
