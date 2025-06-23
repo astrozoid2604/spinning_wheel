@@ -55,7 +55,7 @@ qna_dict = {
            f"\n    B) It can learn from data and improve over time\n"
            f"\n    C) It always requires a robot body\n"
            f"\n    D) It is used only in video games"],
-    "Q9": ["B) To boost business performance using Operational Excellence tools, AI, and advanced technology",
+    "Q9": ["A) To boost business performance using Operational Excellence tools, AI, and advanced technology",
            f"\nQ9. What is the main goal of Continuous Improvement 2.0 (CI2.0)?\n"
            f"\n    A) To boost business performance using Operational Excellence tools, AI, and advanced technology\n"
            f"\n    B) To replace all human major decision-making with AI\n"
