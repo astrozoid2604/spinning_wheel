@@ -8,7 +8,7 @@ import threading
 
 
 
-no_wheel_bool_switch = False # Set to False for Q&A mode. Set to True for spinning wheel animation alone.
+no_wheel_bool_switch = True # Set to False for Q&A mode. Set to True for spinning wheel animation alone.
 
 qna_dict = {
     "Q1": ["B) To turn raw data into useful insights for decision-making",
@@ -124,9 +124,9 @@ class SpinningWheelApp:
 
         self.canvas_size = 800
         self.center = self.canvas_size // 2
-        self.num_sectors = 16
+        self.num_sectors = 16 if not self.no_wheel else 4
         self.sector_angle = 360 / self.num_sectors
-        self.labels = [f"Q{i+1}" if not self.no_wheel else "" for i in range(self.num_sectors)]
+        self.labels = [f"Q{i+1}" if not self.no_wheel else f"Colour {i+1}" for i in range(self.num_sectors)]
         self.current_angle = 0
         self.is_spinning = False
         self.spin_history = []
