@@ -8,7 +8,7 @@ import threading
 
 
 
-no_wheel_bool_switch = False
+no_wheel_bool_switch = False # Set to False for Q&A mode. Set to True for spinning wheel animation alone.
 
 qna_dict = {
     "Q1": ["B) To turn raw data into useful insights for decision-making",
@@ -366,5 +366,5 @@ class SpinningWheelApp:
 # Launch app
 if __name__ == "__main__":
     root = tk.Tk()
-    app = SpinningWheelApp(root, no_wheel=no_wheel_bool_switch) # Set to False for Q&A mode
+    app = SpinningWheelApp(root, no_wheel=no_wheel_bool_switch)
     root.mainloop()
