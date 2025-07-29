@@ -6,6 +6,10 @@ import random
 import time
 import threading
 
+
+
+no_wheel_bool_switch = False
+
 qna_dict = {
     "Q1": ["B) To turn raw data into useful insights for decision-making",
            f"\nQ1. What is the main purpose of data analytics in a company like Amgen?\n"
@@ -104,8 +108,9 @@ qna_dict = {
 }
 
 class SpinningWheelApp:
-    def __init__(self, root):
+    def __init__(self, root, no_wheel=False):
         self.root = root
+        self.no_wheel = no_wheel
         self.root.title("Spinning Wheel")
 
         # Center the main window on screen (doubled size)
@@ -121,7 +126,7 @@ class SpinningWheelApp:
         self.center = self.canvas_size // 2
         self.num_sectors = 16
         self.sector_angle = 360 / self.num_sectors
-        self.labels = [f"Q{i+1}" for i in range(self.num_sectors)]
+        self.labels = [f"Q{i+1}" if not self.no_wheel else "" for i in range(self.num_sectors)]
         self.current_angle = 0
         self.is_spinning = False
         self.spin_history = []
@@ -232,7 +237,8 @@ class SpinningWheelApp:
         self.spin_history.append(selected_label)
         if len(self.spin_history) > 5:
             self.spin_history.pop(0)
-        self.show_result(selected_label)
+        if not self.no_wheel: 
+            self.show_result(selected_label)
         self.is_spinning = False
 
     def show_result(self, label):
@@ -360,5 +366,5 @@ class SpinningWheelApp:
 # Launch app
 if __name__ == "__main__":
     root = tk.Tk()
-    app = SpinningWheelApp(root)
+    app = SpinningWheelApp(root, no_wheel=no_wheel_bool_switch) # Set to False for Q&A mode
     root.mainloop()
